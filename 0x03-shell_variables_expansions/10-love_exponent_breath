@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(((LOVE*LOVE+LOVE+BREATH)*BREATH))
+echo $(((LOVE**BREATH))
