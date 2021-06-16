@@ -6,4 +6,10 @@ In this repository you can find directories with many topic about programming, s
 
 #CONTENT
 
-Directories | Description
+0x00-shell_basics All about the main commands and concepts of Linux
+
+0x01-shell_permissions This is abour the permissions commands
+
+0x02-shell_redirections This is about how to redirect to other files and how to make fusions with other commands
+
+0x03-shell_variables_expansions This is about what means the Variables, his creation and interaction with Linux commands
