@@ -23,3 +23,17 @@
 10-mirror_permissions-sets the mode of the file hello the same as olleh’s mode
 
 11-directories_permissions-adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users
+
+12-directory_permissions-adds permissions to directory
+
+13-change_group-change group
+
+100-change_owner_and_group-change owner and group
+
+101-symbolic_link_permissions-permissions for symbolic link permission
+
+102-if_only-change owner if the owner is guillaume
+
+103-Star_Wars-what star wars episode IV
+
+
