@@ -1,4 +1,4 @@
----DESCRIPTIONS-OF-SCRITPS---
+---SCRIPTS'S-DESCRIPTIONS---
 
 0-current_working_directory-print the current directory
 
