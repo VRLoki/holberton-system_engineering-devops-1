@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Prints string 10 times via for loop
+i=0
+until [ $i -gt 9 ]; do echo Best School; ((i++)); done

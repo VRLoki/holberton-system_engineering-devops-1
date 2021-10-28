@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Prints string 10 times via while loop
+i=0
+while ((i < 10)); do echo Best School; ((i++)); done

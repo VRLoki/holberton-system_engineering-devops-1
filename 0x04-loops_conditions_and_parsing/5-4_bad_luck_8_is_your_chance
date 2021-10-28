@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Displays Best School 10 times,
+# but displays bad luck for the 4th loop iteration
+# but displays good luck for the 8th loop iteration
+i=0
+while ((i < 10)); do
+    if [ "$i" -eq 3 ]
+    then
+        echo bad luck
+    elif [ "$i" -eq 7 ]
+    then
+        echo good luck
+    else
+        echo Best School
+    fi
+    ((i++))
+done
