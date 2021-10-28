@@ -3,11 +3,10 @@
 # but for the 9th iteration, displays Hi
 i=0
 while ((i < 10)); do
-    if [ "$i" -eq 8 ]
+    if [ "$i" -eq 9 ]
     then
         echo Hi
-    else
-        echo Best School
     fi
+    echo Best School
     ((i++))
 done
