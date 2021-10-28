@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Prints string 10 times via for loop
+for ((c=0; c<10; c++)); do echo Best School; done
