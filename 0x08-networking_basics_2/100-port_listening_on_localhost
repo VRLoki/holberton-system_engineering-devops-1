@@ -1,7 +1,3 @@
 #!/usr/bin/env bash
 # Bash script that listens on port 98 on localhost
-cp -f /etc/hosts ~/hosts.new
-sed -i 's/.*[0-9]*localhost/127.0.0.2\tlocalhost/' ~/hosts.new
-sed -i '/.*[0-9]*facebook.com/d' ~/hosts.new
-sed -i '$ a 8.8.8.8\tfacebook.com' ~/hosts.new
-cp -f ~/hosts.new /etc/hosts
+nc -l -k 98
