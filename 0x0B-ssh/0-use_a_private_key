@@ -1,4 +1,4 @@
 #!/bin/bash
 #connect to a server 34.139.172.28 iwth user ubuntu
 #with a key in file ~/.ssh/school
-ssh ubuntu@34.139.172.28 -i ~/.ssh/school
+ssh -i ~/.ssh/school ubuntu@34.139.172.28
