@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Set up a HAproxy in a load balancer server.
+sudo add-apt-repository -y ppa:vbernat/haproxy-1.7
+sudo apt update
+sudo apt install -y haproxy
+sed -i '/errorfile 504/a frontend http_front\n\tbind *:80\n\tstats uri /haproxy?stats\n\tdefault_backend http_back\n\nbackend http_back\n\tbalance roundrobin\n\tserver web1 34.139.172.28:80 check\n\tserver web2 3.87.94.150:80 check' /etc/haproxy/haproxy.cfg
+service haproxy restart
