@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script that shows the user given an argument
+su - "$1" -c 'whoami' # sudo -H -u "$1" bash -c 'whoami'
