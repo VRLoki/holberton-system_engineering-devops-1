@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Scripts that make a mysql dump with all databases and create a tar file with format %d-%m-%Y
-mysqldump -u root -p "$1" --all-databases > backup.sql
+sudo mysqldump -u root --password="$1" --all-databases > backup.sql
 DATE=$(date +%d-%m-%Y)
-tar -czvf "$DATE".tar.gz backup.sql
+sudo tar -zcvf "$DATE".tar.gz backup.sql
