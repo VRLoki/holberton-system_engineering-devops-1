@@ -15,17 +15,17 @@ if __name__ == '__main__':
                              .format(employee_id))
     name = name_resp.json().get('username')
 
+    list_attributes = []
+    dict_employee = {}
+    for tasks in json_repr:
+        tmp_list, tmp_dict = [], {}
+        if tasks.get('userId') == employee_id:
+            tmp_dict['task'] = tasks.get('title')
+            tmp_dict['completed'] = tasks.get('completed')
+            tmp_dict['username'] = name
+            list_attributes.append(tmp_dict)
+    dict_employee[str(employee_id)] = list_attributes
+    jsonString = json.dumps(dict_employee)
     with open('{}.json'.format(employee_id), 'w') as json_data:
-        list_attributes = []
-        dict_employee = {}
-        for tasks in json_repr:
-            tmp_list, tmp_dict = [], {}
-            if tasks.get('userId') == employee_id:
-                tmp_dict['task'] = tasks.get('title')
-                tmp_dict['completed'] = tasks.get('completed')
-                tmp_dict['username'] = name
-                list_attributes.append(tmp_dict)
-        dict_employee[str(employee_id)] = list_attributes
-        jsonString = json.dumps(dict_employee)
         json_data.write(jsonString)
         json_data.close()
