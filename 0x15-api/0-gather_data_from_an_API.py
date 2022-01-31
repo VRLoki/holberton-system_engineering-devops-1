@@ -9,7 +9,7 @@ if __name__ == '__main__':
     resp = requests.get('https://jsonplaceholder.typicode.com/todos/')
     json_repr = resp.json()
     name_resp = requests.get('https://jsonplaceholder.typicode.com/users/{}'
-                        .format(employee_id))
+                             .format(employee_id))
     name = name_resp.json().get('name')
     tasks_done, total_task = 0, 0
 
