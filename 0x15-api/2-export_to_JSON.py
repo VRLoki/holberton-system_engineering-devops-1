@@ -25,7 +25,7 @@ if __name__ == '__main__':
                 tmp_dict['completed'] = tasks.get('completed')
                 tmp_dict['username'] = name
                 list_attributes.append(tmp_dict)
-        dict_employee[employee_id] = list_attributes
+        dict_employee[str(employee_id)] = list_attributes
         jsonString = json.dumps(dict_employee)
         json_data.write(jsonString)
         json_data.close()
