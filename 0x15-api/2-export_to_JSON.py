@@ -28,5 +28,4 @@ if __name__ == '__main__':
         dict_employee[employee_id] = list_attributes
         jsonString = json.dumps(dict_employee)
         json_data.write(jsonString)
-        print(dict_employee)
         json_data.close()
