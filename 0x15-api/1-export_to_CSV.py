@@ -12,7 +12,7 @@ if __name__ == '__main__':
     json_repr = resp.json()
     name_resp = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                              .format(employee_id))
-    name = name_resp.json().get('name')
+    name = name_resp.json().get('username')
 
     with open('{}.csv'.format(employee_id), 'w') as csv_data:
         csv_writer = csv.writer(
