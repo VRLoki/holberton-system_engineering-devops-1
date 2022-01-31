@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """Returns information about a employee with a given ID"""
 import csv
-from operator import delitem
-from flask import jsonify
 import requests
 from sys import argv
 
