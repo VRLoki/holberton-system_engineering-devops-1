@@ -17,7 +17,7 @@ if __name__ == '__main__':
     username = info_user.get('username')
     employee_json = {}
 
-    with open('{}.json'.format(employee_id), 'w+') as file:
+    with open('{}.json'.format(employee_id), 'w+') as f:
         tasks = []
         for todo in all_todo:
             if todo.get('userId') == int(employee_id):
@@ -27,4 +27,4 @@ if __name__ == '__main__':
                 task['username'] = username
                 tasks.append(task)
         employee_json[employee_id] = tasks
-        file.write(json.dumps(employee_json))
+        f.write(json.dumps(employee_json))
